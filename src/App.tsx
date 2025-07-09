@@ -6,20 +6,38 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 function App() {
   const [email, setEmail] = useState('')
 
   return (
-    <div className="relative flex size-full min-h-screen flex-col bg-[#111518] justify-between overflow-x-hidden font-[Space_Grotesk,Noto_Sans,sans-serif]">
-      <div>
-        <Header />
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact email={email} setEmail={setEmail} />
-      </div>
+    <div className="relative min-h-screen bg-[#111518] overflow-x-hidden font-[Space_Grotesk,Noto_Sans,sans-serif]">
+      <Header />
+      
+      <main className="pt-16">
+        <section id="home">
+          <Hero />
+        </section>
+        
+        <section id="about">
+          <About />
+        </section>
+        
+        <section id="projects">
+          <Projects />
+        </section>
+        
+        <section id="skills">
+          <Skills />
+        </section>
+        
+        <section id="contact">
+          <Contact email={email} setEmail={setEmail} />
+        </section>
+      </main>
+      
+      <Footer />
       <Navigation />
     </div>
   )

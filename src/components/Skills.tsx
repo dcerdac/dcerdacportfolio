@@ -1,44 +1,115 @@
 export default function Skills() {
-  const skills = [
+  const skillCategories = [
     {
-      name: "Data Analysis",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-          <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"></path>
-        </svg>
-      )
+      category: "Programming Languages",
+      skills: [
+        { name: "Python", level: 95, icon: "🐍" },
+        { name: "R", level: 85, icon: "📊" },
+        { name: "SQL", level: 90, icon: "🗃️" },
+        { name: "JavaScript", level: 75, icon: "⚡" }
+      ]
     },
     {
-      name: "Database Management",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-          <path d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64ZM69.61,53.08C85.07,44.65,105.81,40,128,40s42.93,4.65,58.39,13.08C200.12,60.57,208,70.38,208,80s-7.88,19.43-21.61,26.92C170.93,115.35,150.19,120,128,120s-42.93-4.65-58.39-13.08C55.88,99.43,48,89.62,48,80S55.88,60.57,69.61,53.08ZM186.39,202.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64V176C208,185.62,200.12,195.43,186.39,202.92Z"></path>
-        </svg>
-      )
+      category: "Data Science & ML",
+      skills: [
+        { name: "Machine Learning", level: 92, icon: "🤖" },
+        { name: "Deep Learning", level: 85, icon: "🧠" },
+        { name: "Data Visualization", level: 90, icon: "📈" },
+        { name: "Statistical Analysis", level: 88, icon: "📊" }
+      ]
     },
     {
-      name: "Programming",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-          <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"></path>
-        </svg>
-      )
+      category: "Tools & Frameworks",
+      skills: [
+        { name: "TensorFlow", level: 80, icon: "🔥" },
+        { name: "PyTorch", level: 75, icon: "🔮" },
+        { name: "Pandas", level: 95, icon: "🐼" },
+        { name: "Apache Spark", level: 70, icon: "⚡" }
+      ]
+    },
+    {
+      category: "Energy Domain",
+      skills: [
+        { name: "Renewable Energy", level: 90, icon: "🌱" },
+        { name: "Smart Grid", level: 85, icon: "🔌" },
+        { name: "Energy Forecasting", level: 88, icon: "🔮" },
+        { name: "Grid Analytics", level: 80, icon: "📊" }
+      ]
     }
-  ]
+  ];
 
   return (
-    <>
-      <h2 className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-        Skills
-      </h2>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-        {skills.map((skill, index) => (
-          <div key={index} className="flex flex-1 gap-3 rounded-lg border border-[#3c4953] bg-[#1c2226] p-4 items-center">
-            <div className="text-white">{skill.icon}</div>
-            <h2 className="text-white text-base font-bold leading-tight">{skill.name}</h2>
+    <section className="py-20 px-4 bg-gradient-to-b from-[#0a0e12] to-[#111518] relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-900/5 to-transparent"></div>
+      <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Skills & <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">Expertise</span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            A comprehensive overview of my technical skills and domain expertise
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {skillCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">
+                  {categoryIndex + 1}
+                </div>
+                {category.category}
+              </h3>
+              
+              <div className="space-y-4">
+                {category.skills.map((skill, skillIndex) => (
+                  <div key={skillIndex} className="group">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-gray-300 font-medium flex items-center gap-2">
+                        <span className="text-lg">{skill.icon}</span>
+                        {skill.name}
+                      </span>
+                      <span className="text-blue-400 font-medium">{skill.level}%</span>
+                    </div>
+                    <div className="w-full bg-gray-700/50 rounded-full h-2 overflow-hidden">
+                      <div 
+                        className="h-full bg-gradient-to-r from-blue-600 to-purple-600 rounded-full transition-all duration-1000 ease-out group-hover:from-blue-500 group-hover:to-purple-500"
+                        style={{ 
+                          width: `${skill.level}%`,
+                          animation: `skillBar 1.5s ease-out ${skillIndex * 0.1}s both`
+                        }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Certifications */}
+        <div className="mt-16 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl p-8 border border-blue-500/20">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Certifications & Awards</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { title: "AWS Certified ML Specialist", issuer: "Amazon", year: "2023" },
+              { title: "Google Cloud Professional Data Engineer", issuer: "Google", year: "2022" },
+              { title: "Energy Analytics Certificate", issuer: "Stanford", year: "2021" }
+            ].map((cert, index) => (
+              <div key={index} className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/50">
+                <div className="text-3xl mb-2">🏆</div>
+                <h4 className="text-white font-semibold mb-1">{cert.title}</h4>
+                <p className="text-gray-400 text-sm">{cert.issuer} • {cert.year}</p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </>
+      
+    </section>
   )
 }
