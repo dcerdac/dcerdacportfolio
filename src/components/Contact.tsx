@@ -42,14 +42,16 @@ export default function Contact({ email, setEmail }: ContactProps) {
             {/* Contact Methods */}
             <div className="space-y-6">
               {[
-                { icon: '📧', label: 'Email', value: 'diego.cerda@example.com', href: 'mailto:diego.cerda@example.com' },
-                { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/diegocerda', href: 'https://linkedin.com/in/diegocerda' },
-                { icon: '📱', label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-                { icon: '📍', label: 'Location', value: 'San Francisco, CA', href: '#' }
+                { icon: '📧', label: 'Email', value: 'dcerdac@gmail.com', href: 'mailto:dcerdac@gmail.com' },
+                { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/diegocerdac', href: 'https://linkedin.com/in/diegocerdac' },
+                { icon: '📱', label: 'Phone', value: '+1 (346) 232-5758', href: 'tel:+13462325758' },
+                { icon: '🐙', label: 'GitHub', value: 'github.com/dcerdac', href: 'https://github.com/dcerdac' },
+                { icon: '📄', label: 'Download CV', value: 'Diego_Cerda_CV.pdf', href: '/cv/Diego_Cerda_CV.pdf', download: 'Diego_Cerda_CV.pdf' }
               ].map((contact, index) => (
                 <a
                   key={index}
                   href={contact.href}
+                  {...(contact.download && { download: contact.download })}
                   className="flex items-center gap-4 p-4 bg-gray-800/30 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 hover:bg-gray-800/50 group"
                 >
                   <div className="text-2xl">{contact.icon}</div>

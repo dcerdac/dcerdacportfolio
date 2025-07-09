@@ -1,9 +1,9 @@
 export default function About() {
   const stats = [
-    { number: "5+", label: "Years Experience" },
-    { number: "20+", label: "Projects Completed" },
-    { number: "3", label: "Energy Companies" },
-    { number: "15%", label: "Avg. Efficiency Gain" }
+    { number: "7+", label: "Years Experience" },
+    { number: "15+", label: "GW Deployed" },
+    { number: "10+", label: "Energy Companies" },
+    { number: "24%", label: "Incident Reduction" }
   ];
 
   return (
@@ -22,10 +22,10 @@ export default function About() {
                 About <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">Me</span>
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I am a passionate data scientist with a deep focus on revolutionizing the energy sector through advanced analytics and machine learning. My expertise spans across renewable energy optimization, smart grid analysis, and predictive modeling.
+                Senior Energy Analyst with over 7 years of experience in the energy sector, specializing in driving innovation and developing advanced analytical tools for solar, battery storage, geothermal, wind, and oil & gas industries.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                With a strong background in mathematics and computer science, I bridge the gap between complex energy systems and actionable business insights. I thrive on transforming raw data into strategic solutions that drive sustainable energy practices.
+                Proficient in machine learning for regression, clustering, classification, and forecasting. Highly skilled in data analytics, SQL, and Python. Currently working as a Senior Data Scientist at Globant S.A., building computer vision-based monitoring systems and scalable microservices.
               </p>
             </div>
             
@@ -33,11 +33,11 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 "Machine Learning & AI",
-                "Energy Systems Analysis",
-                "Data Visualization",
+                "Computer Vision",
+                "Energy Analytics",
                 "Predictive Modeling",
-                "Renewable Energy",
-                "Smart Grid Technology"
+                "SCADA Systems",
+                "MLOps & DevOps"
               ].map((skill, index) => (
                 <div key={index} className="flex items-center gap-3 p-3 bg-gray-800/30 rounded-lg border border-gray-700/50">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>

@@ -4,36 +4,36 @@ export default function Skills() {
       category: "Programming Languages",
       skills: [
         { name: "Python", level: 95, icon: "🐍" },
-        { name: "R", level: 85, icon: "📊" },
         { name: "SQL", level: 90, icon: "🗃️" },
-        { name: "JavaScript", level: 75, icon: "⚡" }
+        { name: "JavaScript", level: 80, icon: "⚡" },
+        { name: "Java", level: 75, icon: "☕" }
       ]
     },
     {
-      category: "Data Science & ML",
+      category: "Machine Learning & AI",
       skills: [
-        { name: "Machine Learning", level: 92, icon: "🤖" },
-        { name: "Deep Learning", level: 85, icon: "🧠" },
-        { name: "Data Visualization", level: 90, icon: "📈" },
-        { name: "Statistical Analysis", level: 88, icon: "📊" }
+        { name: "Scikit-learn", level: 95, icon: "🤖" },
+        { name: "TensorFlow", level: 85, icon: "🔥" },
+        { name: "PyTorch", level: 80, icon: "🔮" },
+        { name: "YOLO", level: 85, icon: "👁️" }
       ]
     },
     {
-      category: "Tools & Frameworks",
+      category: "Cloud & DevOps",
       skills: [
-        { name: "TensorFlow", level: 80, icon: "🔥" },
-        { name: "PyTorch", level: 75, icon: "🔮" },
+        { name: "AWS", level: 90, icon: "☁️" },
+        { name: "Docker", level: 85, icon: "🐳" },
+        { name: "Kubernetes", level: 80, icon: "⚙️" },
+        { name: "MLOps", level: 85, icon: "🚀" }
+      ]
+    },
+    {
+      category: "Data & Analytics",
+      skills: [
         { name: "Pandas", level: 95, icon: "🐼" },
-        { name: "Apache Spark", level: 70, icon: "⚡" }
-      ]
-    },
-    {
-      category: "Energy Domain",
-      skills: [
-        { name: "Renewable Energy", level: 90, icon: "🌱" },
-        { name: "Smart Grid", level: 85, icon: "🔌" },
-        { name: "Energy Forecasting", level: 88, icon: "🔮" },
-        { name: "Grid Analytics", level: 80, icon: "📊" }
+        { name: "NumPy", level: 90, icon: "🔢" },
+        { name: "Plotly", level: 85, icon: "📊" },
+        { name: "Jupyter", level: 90, icon: "📓" }
       ]
     }
   ];
@@ -96,9 +96,9 @@ export default function Skills() {
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Certifications & Awards</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "AWS Certified ML Specialist", issuer: "Amazon", year: "2023" },
-              { title: "Google Cloud Professional Data Engineer", issuer: "Google", year: "2022" },
-              { title: "Energy Analytics Certificate", issuer: "Stanford", year: "2021" }
+              { title: "HCIA-IA", issuer: "Huawei", year: "2024" },
+              { title: "Climatebase Fellowship", issuer: "Climatebase", year: "2025" },
+              { title: "EcoVentus - 2nd Place", issuer: "Huawei Developer Competition", year: "2025" }
             ].map((cert, index) => (
               <div key={index} className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/50">
                 <div className="text-3xl mb-2">🏆</div>

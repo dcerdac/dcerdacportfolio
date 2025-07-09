@@ -29,15 +29,15 @@ export default function Hero() {
                   Diego Cerda
                 </h1>
                 <h2 className="text-gray-300 text-xl md:text-2xl font-light leading-relaxed">
-                  Data Scientist specializing in{' '}
+                  Senior Data Scientist specializing in{' '}
                   <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text font-semibold">
-                    Energy Industry Solutions
+                    Energy & AI Solutions
                   </span>
                 </h2>
               </div>
               
               <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
-                Transforming complex energy data into actionable insights through machine learning and predictive analytics.
+                7+ years driving innovation in solar, battery storage, geothermal, wind, and oil & gas industries through advanced analytics, machine learning, and predictive modeling.
               </p>
               
               <div className="flex flex-wrap gap-4 mt-8">
@@ -54,14 +54,18 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
                 
-                <button className="group border-2 border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white font-medium py-4 px-8 rounded-xl transition-all duration-300 hover:bg-gray-800/50 backdrop-blur-sm">
+                <a 
+                  href="/cv/Diego_Cerda_CV.pdf" 
+                  download="Diego_Cerda_CV.pdf"
+                  className="group border-2 border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white font-medium py-4 px-8 rounded-xl transition-all duration-300 hover:bg-gray-800/50 backdrop-blur-sm inline-block"
+                >
                   <span className="flex items-center gap-2">
                     Download CV
                     <svg className="w-5 h-5 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
