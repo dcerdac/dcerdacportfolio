@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -9,7 +8,6 @@ import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 
 function App() {
-  const [email, setEmail] = useState('')
 
   return (
     <div className="relative min-h-screen bg-[#111518] overflow-x-hidden font-[Space_Grotesk,Noto_Sans,sans-serif]">
@@ -33,7 +31,7 @@ function App() {
         </section>
         
         <section id="contact">
-          <Contact email={email} setEmail={setEmail} />
+          <Contact />
         </section>
       </main>
       

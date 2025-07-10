@@ -68,9 +68,14 @@ export default function About() {
               <p className="text-gray-400 text-sm mb-4">
                 I'm always excited to collaborate on innovative energy projects and data-driven solutions.
               </p>
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+              <a 
+                href="https://linkedin.com/in/diegocerdac" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 inline-block"
+              >
                 Get In Touch
-              </button>
+              </a>
             </div>
           </div>
         </div>
