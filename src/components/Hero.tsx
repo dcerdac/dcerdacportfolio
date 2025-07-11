@@ -8,23 +8,31 @@ export default function Hero() {
     <div className="@container">
       <div className="@[480px]:p-4">
         <div className="relative overflow-hidden @[480px]:rounded-2xl">
-          {/* Animated Background */}
+          {/* Video Background */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
-            <div className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMYeysC0HSn4NLHLwqvVJt63vT1qEwTO5GKzd9LxqneeZcOMlO9G9UaDgyRTz4Jt22C8yTEcB_Jjyx8po3FecZD9MiReP-kPvrSZuEf2KKg8zNH3UHYQkVTqA0mzyouH17lhQB6n7w8nWWrBPOMXkXYOgpH2qPfVtVJNXr1U-DDYlFyNzzGi0mVt-3C9YrVlbC1aWMe25P90P-eIiPclfAwo3un2XULe0VQWgZvPPUB3E5He7CZWeIJCI9mvq5LQtKFTX_XWIfK6U')] bg-cover bg-center opacity-20"></div>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover blur-sm opacity-30"
+              style={{ filter: 'blur(4px) brightness(0.4)' }}
+            >
+              <source src="/videos/20250711_1038_Dynamic Data Visualization_remix_01jzx5m6d6fxjvct9ax9dpsgc3.mp4" type="video/mp4" />
+            </video>
+            {/* Gradient overlays for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 via-purple-900/50 to-indigo-900/50"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
           </div>
           
-          {/* Floating Elements */}
-          <div className="absolute top-10 right-10 w-32 h-32 bg-blue-500/10 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-10 w-24 h-24 bg-purple-500/10 rounded-full blur-xl animate-pulse delay-1000"></div>
+          {/* Additional Floating Elements */}
+          <div className="absolute top-10 right-10 w-32 h-32 bg-blue-500/10 rounded-full blur-xl animate-ping" style={{animationDuration: '3s'}}></div>
+          <div className="absolute bottom-20 left-10 w-24 h-24 bg-purple-500/10 rounded-full blur-xl animate-ping" style={{animationDuration: '4s', animationDelay: '1s'}}></div>
           
           {/* Content */}
           <div className="relative flex min-h-[600px] flex-col gap-8 items-start justify-center px-6 py-20 @[480px]:px-12 @[480px]:py-24">
             <div className="flex flex-col gap-6 text-left max-w-2xl">
               <div className="space-y-2">
-                <div className="inline-block px-4 py-2 bg-blue-500/20 backdrop-blur-sm rounded-full border border-blue-400/30">
-                  <span className="text-blue-300 text-sm font-medium">👋 Hello, I'm</span>
-                </div>
                 <h1 className="text-white text-5xl md:text-7xl font-black leading-tight tracking-[-0.02em] bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
                   Diego Cerda
                 </h1>

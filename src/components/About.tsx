@@ -47,8 +47,26 @@ export default function About() {
             </div>
           </div>
           
-          {/* Stats */}
+          {/* Profile Picture & Stats */}
           <div className="space-y-8">
+            {/* Profile Picture */}
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="w-64 h-64 rounded-2xl overflow-hidden border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20">
+                  <img 
+                    src="/images/profile-picture.jpg" 
+                    alt="Diego Cerda - Senior Data Scientist"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback to placeholder if image not found
+                      e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%233b82f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%238b5cf6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23grad)'/%3E%3Ctext x='200' y='220' font-family='Arial' font-size='120' font-weight='bold' fill='white' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E";
+                    }}
+                  />
+                </div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-20"></div>
+              </div>
+            </div>
+            
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center p-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 backdrop-blur-sm">
